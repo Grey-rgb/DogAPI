@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogAPI", "DogAPI\DogAPI.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClients", "HttpClients\HttpClients.csproj", "{736B29C5-B5DF-4560-87D0-1571B23F3AC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOs", "DTOs\DTOs.csproj", "{19FF4F36-59F7-4F15-86F9-2C13C40F479D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,5 +16,11 @@ Global
 		{736B29C5-B5DF-4560-87D0-1571B23F3AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{736B29C5-B5DF-4560-87D0-1571B23F3AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{736B29C5-B5DF-4560-87D0-1571B23F3AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19FF4F36-59F7-4F15-86F9-2C13C40F479D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19FF4F36-59F7-4F15-86F9-2C13C40F479D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19FF4F36-59F7-4F15-86F9-2C13C40F479D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19FF4F36-59F7-4F15-86F9-2C13C40F479D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFBC9829-1C5D-4371-8C0C-50DA4693D14F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFBC9829-1C5D-4371-8C0C-50DA4693D14F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal

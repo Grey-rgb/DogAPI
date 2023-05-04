@@ -1,4 +1,7 @@
-﻿@page "/dogAPI"
+﻿@page "/"
+@using DTOs.domains
+@using HttpClients.clientInterfaces
+@inject IDogService _dogService
 
 <PageTitle>DogAPI</PageTitle>
 
@@ -6,11 +9,42 @@
     <h5>DogAPI</h5>
 </div>
 
-<div class="api-container">
-    
+<div class="image-container">
+    @if (dogToDisplay != null)
+    {
+        <img class="dogImage" src="@dogToDisplay.message" alt="image of a dog"/>
+    }
+</div>
+
+<div class="button-container">
+        <button class="btn btn-success" onclick="@GetRandomDogFromAPI">Random</button>
+</div>
+
+<div class="error-container">
+    @if (!String.IsNullOrEmpty(errorMsg))
+    {
+        <h6>@errorMsg</h6>
+    }
 </div>
 
 @code
 {
+    //Dog attribute
+    private DogDTO? dogToDisplay { get; set; }
     
+    //Error attribute
+    private String errorMsg { get; set; }
+
+    private async Task GetRandomDogFromAPI()
+    {
+        try
+        {
+            dogToDisplay = await _dogService.getRandomDogAsync();
+            Console.WriteLine(dogToDisplay.message);
+        }
+        catch (Exception e)
+        {
+            errorMsg = e.Message;
+        }
+    }
 }

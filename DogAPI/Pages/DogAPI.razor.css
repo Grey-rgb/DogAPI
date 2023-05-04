@@ -1,0 +1,26 @@
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.dogImage {
+    height: 40%;
+    width: 40%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 1%;
+}
+
+.error-container {
+    display: flex;
+    justify-content: center;
+}
